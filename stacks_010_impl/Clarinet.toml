@@ -7,10 +7,17 @@ cache_dir = './.cache'
 requirements = []
 [contracts.SIP_O10]
 path = 'contracts/SIP_O10.clar'
-clarity_version = 3
+clarity_version = 4
+epoch = 'latest'
+
+[contracts.ft-trait]
+path = 'contracts/ft-trait.clar'
+clarity_version = 4
 epoch = 'latest'
 [repl.analysis]
 passes = ['check_checker']
+
+[repl.analysis.lints]
 
 [repl.analysis.check_checker]
 strict = false
